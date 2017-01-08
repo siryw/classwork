@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<label for="first"> First Name:</label>
+	<input type="text"  id="first" name="first" placeholder="John" required>
+	<label for="last"> Last Name:</label>
+	<input type="text" id=last" name="last" placeholder="Smith" required>
+	<br>
+	<label for="male"> Male </label>
+	<input type="radio" name="gender" id="male" value="male">
+	<label for="female"> Female</label>
+	<input type="radio" name="gender" id="female" value="female">
+	<label for="other"> Other</label>
+	<input type="radio" name="gender" id="other" value="other">
+	<br>
+	<label for="email">Email:</label>
+	<input id="email" type="email" name="email" placeholder="your email" required>
+	<label for="password">Password:</label>
+	<input id="password" type="password" name="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+	<br>
+	<label>Birthday:</label>
+	<select name="month">
+		<option>01</option>
+		<option>02</option>
+		<option>03</option>
+		<option>04</option>
+		<option>05</option>
+		<option>06</option>
+		<option>07</option>
+		<option>08</option>
+		<option>09</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+	</select>
+	<select name="day">
+		<option>01</option>
+		<option>02</option>
+		<option>03</option>
+		<option>04</option>
+		<option>05</option>
+		<option>06</option>
+		<option>07</option>
+		<option>08</option>
+		<option>09</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+	</select>
+	<select name="year">
+		<option>01</option>
+		<option>02</option>
+		<option>03</option>
+		<option>04</option>
+		<option>05</option>
+		<option>06</option>
+		<option>07</option>
+		<option>08</option>
+		<option>09</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+	</select>
+	<br>
+	<label for="conditions"> I agree to the terms and conditions </label>
+	<input id="conditions" name="conditions" type="checkbox">
+	<br>
+	<button>Submit</button>
+</body>
+</html>
+
