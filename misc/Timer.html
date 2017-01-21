@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> timer</title>
+	<style>
+		body {
+			padding-top: 20%;
+			text-align: center;
+		}
+	</style>
+	<script>
+		var concentration
+		var interval
+		var clearint
+
+		function activate(){
+			alert("activate!");
+			concentration = window.setTimeout(function() {alert("concentrate!");}, 60000);
+		}
+
+		function StartCycle(){
+			interval = window.setInterval(activate, 240000);
+		}
+
+		function StopCycle(){
+			clearint = clearInterval(interval);
+		}
+	</script>
+</head>
+<body>
+<h1> Productivity timer </h1>
+<button onclick="StartCycle()"> Start cycle </button>
+<button onclick="StopCycle()"> Stop cycle </button>
+
+</body>
+</html>
